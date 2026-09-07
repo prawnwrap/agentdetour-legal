@@ -44,11 +44,15 @@
 <h2>2. Information we collect</h2>
 <p>We collect the following categories of information:</p>
 <ul>
-  <li><strong>Account information:</strong> a username you choose, and optionally an email address if you use a login method that requires one.</li>
-  <li><strong>Preferences:</strong> the sports, competitions, and teams you follow, so we can personalise your feed.</li>
-  <li><strong>Push notification token:</strong> a device identifier that lets us send you notifications you've opted into (e.g. breaking news, kickoff reminders). This is managed via Firebase Cloud Messaging.</li>
-  <li><strong>Usage data:</strong> which stories, games, and features you interact with, used to improve content relevance and to detect trending topics.</li>
-  <li><strong>Mates/social features:</strong> if you use the "mates" or friend-search functionality, we store your username and the connections you make. Search is limited to protect your privacy — see Section 5.</li>
+  <li><strong>Account information:</strong> a username you choose, an optional email address, and optionally a first/last name if you provide one during sign-up.</li>
+  <li><strong>Preferences:</strong> the sports, competitions, and teams you follow (including any you exclude), and your notification settings, so we can personalise your feed.</li>
+  <li><strong>Push notification token:</strong> a device push token (delivered via Expo, using Firebase Cloud Messaging on Android and APNs on iOS) that lets us send you notifications you've opted into (e.g. breaking news, kickoff reminders, full-time scores), plus your device platform and the date you installed the app.</li>
+  <li><strong>Activity data:</strong> when you were last active in the app, so we can maintain your account and understand engagement with the App.</li>
+  <li><strong>Usage data:</strong> which stories, games, and features you interact with, used to improve content relevance and to detect trending topics. This includes search terms you enter, so we can identify trending topics across users.</li>
+  <li><strong>Saved stories:</strong> if you bookmark a story, we store a record of it against your account so you can find it again.</li>
+  <li><strong>Game and leaderboard data:</strong> your scores, streaks, and performance in the App's games, which may be visible to other users on leaderboards.</li>
+  <li><strong>Mates/social features:</strong> if you use the "mates" or friend-search functionality, we store your username, any name you've provided, and the connections you make.</li>
+  <li><strong>Support messages:</strong> if you contact us or submit a suggestion via the App, we store your message and, where applicable, your account identifier so we can respond.</li>
   <li><strong>Device and technical information:</strong> device type, operating system version, and app version, used for compatibility and troubleshooting.</li>
 </ul>
 
@@ -70,14 +74,16 @@
   <li><strong>Firebase (Google)</strong> — push notification delivery</li>
   <li><strong>OpenAI</strong> — used to generate story summaries and breakdowns from publicly available sports news content. This does not involve sending your personal account data to OpenAI</li>
   <li><strong>API-Sports</strong> and other sports data providers — supply live scores and statistics; we do not send your personal data to these providers</li>
+  <li><strong>PostHog</strong> — product analytics (EU-hosted), used to understand how the App is used (e.g. which screens and features you interact with) so we can improve it</li>
+  <li><strong>Resend</strong> — used to deliver support and suggestion messages you send us to our team by email</li>
 </ul>
 <p>We do not sell, rent, or trade your personal information to third parties for their marketing purposes.</p>
 
 <h2>5. Mates and search</h2>
-<p>To protect your privacy, single-word searches only match against usernames, not real names. Multi-word searches may also match first/last names if you've chosen to share them. You control what's visible to other users in your settings.</p>
+<p>To protect your privacy, single-word searches only match against usernames, not real names. Multi-word searches may also match first/last names if you've provided them when you signed up. We don't currently offer a separate setting to control the visibility of this information beyond what you choose to provide at sign-up and in your profile — if this changes, we'll update this policy.</p>
 
 <h2>6. Data retention</h2>
-<p>We retain account and preference data for as long as your account is active. You can delete your account at any time from within the App's settings, which will remove your personal data from our systems within 30 days, except where we're required to retain it for legal or security purposes.</p>
+<p>We retain account and preference data for as long as your account is active. If you'd like your account and personal data deleted, contact us at <a href="mailto:privacy@agentdetour.com">privacy@agentdetour.com</a> and we'll remove it from our systems within 30 days, except where we're required to retain it for legal or security purposes.</p>
 
 <h2>7. Your rights</h2>
 <p>If you are located in the UK or EU, you have rights under UK GDPR / EU GDPR, including the right to:</p>
@@ -88,7 +94,7 @@
   <li>Object to or restrict certain processing</li>
   <li>Data portability</li>
 </ul>
-<p>To exercise any of these rights, contact us at <a href="mailto:privacy@agentdetour.com">privacy@agentdetour.com</a>. You also have the right to lodge a complaint with the UK Information Commissioner's Office (ICO) at <a href="https://ico.org.uk" target="_blank">ico.org.uk</a>.</p>
+<p>To exercise any of these rights, including requesting deletion of your account, contact us at <a href="mailto:privacy@agentdetour.com">privacy@agentdetour.com</a>. You also have the right to lodge a complaint with the UK Information Commissioner's Office (ICO) at <a href="https://ico.org.uk" target="_blank">ico.org.uk</a>.</p>
 
 <h2>8. Children's privacy</h2>
 <p>Agent Detour is not directed at children under 13. We do not knowingly collect personal information from children under this age. If you believe a child has provided us with personal information, please contact us and we will delete it.</p>
